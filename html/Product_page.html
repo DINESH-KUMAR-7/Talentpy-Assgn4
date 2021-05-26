@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>Our App-Products</title>
+        <style>
+            input[type=text] {
+              width: 130px;
+              box-sizing:border-box;
+              border: 2px;
+              border-radius: 7px;
+              font-size: 16px;
+              background-color:aquamarine;
+              padding: 12px 20px 12px 30px;
+              transition: width 0.4s ease-in-out;
+            }
+
+            input[type=text]:focus {
+              width: 50%;
+            }
+        </style>
+        <style>
+            .link{
+                position: relative;
+                bottom: -102%;
+                background-color: rgb(29, 134, 138);
+                left: 2;
+
+            }
+        </style>
+        <style>
+            a:link, a:visited {
+              background-color: #2a3bda;
+              color: white;
+              padding: 5px 20px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+            }
+
+            a:hover, a:active {
+              background-color: rgb(91, 204, 26);
+            }
+        </style>
+        <style>
+          .body{
+            background-image: url('low-poly.jpg');
+            width: 1840;
+            height: 950;
+            background-repeat: no-repeat;
+            background-size:cover;
+          }
+        </style>
+      <style>
+        table{
+          border-collapse: collapse;
+          width: 100%;
+          align-items: center;
+        }
+        th, td {
+          font-family: 'Roboto Mono', monospace;
+          text-align: left;
+          padding: 8px;
+        }
+        td{
+          font-size: larger;
+          font-weight: bold;
+        }
+
+      tr:nth-child(even){background-color: #f2f2f2}
+
+      th {
+        background-color: #4CAF50;
+        color: white;
+      }
+      </style>
+    </head>
+
+    <body style="background-color:rgb(44, 212, 156);">
+
+      <div class="body">
+        <h1 style="background-color:rgb(29, 134, 138); text-align: center;">Our App</h1>
+
+        <form>
+          <input type="text" name="search" placeholder="Search..">
+        </form>
+
+        <div class="link">
+            <a href="Home_page.html">HOME</a>
+            <a href="Product_page.html">Products</a>
+            <a href="Contact_us.html">Contact US</a>
+        </div>
+
+
+            <table>
+              <tr>
+                <th>Samsung</th>
+                <th>One plus</th>
+                <th>I phone</th>
+              </tr>
+              <tr>
+                <td><img src="samsung.jpeg" style="width: 200;"><br><p>Samsung Galaxy M31s<br>(Mirage Blue, 6GB RAM, 128GB Storage)<p style="color: crimson;">₹ 16,999.00</p><sub><strike>₹ 22,999.00</strike></sub></p></td>
+                <td><img src="oneplus-nord2.jpg"style="width: 200;"><br><p>OnePlus Nord 5G<br>(Blue Marble, 12GB RAM, 256GB Storage)<p style="color: crimson;">₹ 29,999.00</p><sub><strike>₹ 32,999.00</strike></sub></p></td>
+                <td><img src="iphone.jpg"style="width: 174;"><br><p>Apple iPhone 11 Pro Max<br>(256GB)- Midnight Green <p style="color: crimson;">₹ 92,900.00</p><sub><strike>₹ 1,23,900.00</strike></sub></p> </td>
+              </tr>
+              <tr>
+                <th>Samsung</th>
+                <th>Oppo</th>
+                <th>Redmi</th>
+              </tr>
+              <tr>
+                <td><img src="m12.jpg" style="width: 300;"><br><p>Samsung Galaxy M12 <br>(Black,6GB RAM, 128GB Storage) <p style="color: crimson;">₹ 13,499.00</p></p><sub><strike>₹ 15,499.00</strike></sub></td>
+                <td><img src="oppo.jpg"style="width: 200;"><br><p>Oppo A31 <br>(Fantasy White, 6GB RAM, 128GB Storage) <p style="color: crimson;">₹ 10,990.00</p></p><sub><strike>₹ 15,990.00</strike></sub></td>
+                <td><img src="redmi.jpeg"style="width: 200;"><br><p>Redmi Note 10 <br>(Shadow Black, 4GB RAM, 64GB Storage<p style="color: crimson;">₹ 12,499.00</p></p> <sub><strike>₹ 15,999.00</strike></sub></td>
+              </tr>
+            </table>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+      </div>
+    </body>
+</html>

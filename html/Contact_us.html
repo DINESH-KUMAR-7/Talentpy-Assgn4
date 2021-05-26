@@ -1,0 +1,122 @@
+<html>
+
+    <head>
+        <title>Our App-Contact Us</title>
+        <style>
+            .link{
+                position: relative;
+                bottom: -45%;
+                background-color: rgb(29, 134, 138);
+                left: 2;
+            }
+        </style>
+
+        <style>
+            a:link, a:visited {
+              background-color: #2a3bda;
+              color: white;
+              padding: 5px 20px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+            }
+
+            a:hover, a:active {
+              background-color: rgb(91, 204, 26);
+            }
+        </style>
+
+        <style>
+            .form{
+                border-color: black;
+                border-radius: 25px;
+                background: rgb(29, 134, 138);
+                position: relative;
+                padding: 50px 30px;
+                align-items: center;
+                left: 40%;
+                text-align: center;
+                width: 20%;
+            }
+        </style>
+
+        <style>
+            .body{
+                background-image: url('low-poly.jpg');
+                height: 885;
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+        </style>
+
+        <style type ="text/css" >
+            .footer{
+                position: fixed;
+                text-align: center;
+                bottom: 0px;
+                width: 100%;
+                height: 5%;
+                font-family: Cascadia Code;
+                font-size:35;
+                background-color:rgb(29, 134, 138);
+            }
+         </style>
+         <style>
+            input[type=text] {
+              width: 100%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              box-sizing: border-box;
+              background: rgb(29, 134, 138);
+              border: none;
+              border-bottom: 2px solid rgb(10, 211, 117);
+            }
+            input[type=text]:focus {
+                border: 3px solid #555;
+            }
+            </style>
+    </head>
+
+    <body style="background-color:rgb(44, 212, 156); width: 1830; height: 900;" >
+        <div class="body">
+            <h1 style="background-color:rgb(29, 134, 138); text-align: center;">Our App</h1>
+        <br>
+        <div class="form">
+            <form >
+                <label for="Username">Username:</label></br>
+                <input type="text" name="Username" required></br>
+                <label for="E-Mail">E-Mail:</label></br>
+                <input type="text" name="E-mail" required></br></br>
+                <label for="Phone">Phone No.:</label></br>
+                <input type="text" name="number" onclick="open_dialog()" required></br></br>
+                <input type="submit" value="Send Enquiry"id="click_button">
+            </form>
+            <dialog id="dialog"style="width:50%; background-color:#F4FFEF; border:1px ">
+                <p>Thanks for your enquiry!</p>
+                <button id="hide">Close</button>
+            </dialog>
+        </div>
+
+        <div class="link">
+            <a href="Home_page.html">HOME</a>
+            <a href="Product_page.html">Products</a>
+            <a href="Contact_us.html">Contact US</a>
+        </div>
+        </div>
+        <div class="footer">Thanks For Visiting
+        </div>
+        <!--javaScript code to open&close Dialog box-->
+        <script>
+            (function() {
+                var dialog = document.getElementById('dialog');
+                document.getElementById('click_button').onclick = function() {
+                dialog.show();
+            };
+                document.getElementById('hide').onclick = function() {
+                dialog.close();
+            };
+        })();
+        </script>
+    </body>
+
+</html>
